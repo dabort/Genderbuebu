@@ -5,14 +5,62 @@ export const siteData = {
   assets: {
     r2Base: R2_BASE,
     brandLogo: `${R2_BASE}/branding/genderbuebu_openair-logo-white.png`,
+
+    hero2027: {
+      bull: `${R2_BASE}/branding/eringer_1.webp`,
+      wood: `${R2_BASE}/branding/holzwand_repl.webp`,
+      panorama: `${R2_BASE}/branding/panorama.webp`,
+      stars: `${R2_BASE}/branding/wallisersterne.webp`,
+    },
   },
 
   event2027: {
     title: "Genderbüebu Openair 2027",
     heroImage: "",
-    date: "",
-    ticketUrl: "",
-    ticketReleaseAt: "2026-10-01T00:00:00+02:00",
+    date: "06. / 07. August 2027",
+    location: "Festwiese Stapfen · Naters",
+
+    lineup: {
+      releaseAt: "2026-09-27T00:00:00+02:00",
+
+      friday: {
+        date: "Freitag, 06. Aug. 2027",
+        time: "ab 17 Uhr",
+        artists: [
+          "Fääschtbänkler",
+          "Hess-Rusch-Hegner",
+          "Moser Musig",
+          "Salwaldbuebu",
+          "Quöllfrisch-Buebe",
+          "Churfirste Gruess",
+          "Prättigauer Power",
+        ],
+      },
+
+      saturday: {
+        date: "Samstag, 07. Aug. 2027",
+        time: "ab 12 Uhr",
+        artists: [
+          "Genderbüebu",
+          "Iten-Grab",
+          "Waldhöckler",
+          "Trio Vollgas",
+          "Schimbrig Power",
+          "Tschäggerlibuebe",
+          "Kitsch",
+          "Echo vom Kontrabass-Shop",
+          "& Dä Nötzli mit dä Chlötzli",
+          "LT Spitzenblick",
+          "Diä lüpfigä Chüetrieber",
+          "Nesselbüebu",
+        ],
+      },
+    },
+
+    tickets: {
+      url: "https://www.eventfrog.ch/genderbuebu",
+      releaseAt: "2026-10-01T00:00:00+02:00",
+    },
   },
 
   retrospective2026: {
@@ -39,7 +87,7 @@ export const siteData = {
     presentedBy: [
       {
         name: "Vaudoise",
-        logo: `${R2_BASE}/sponsors/presented-by/vaudoise.svg`,
+        logo: `${R2_BASE}/sponsors/presented-by/vaudoise_gruen_praesentiert.webp`,
       },
     ],
 
