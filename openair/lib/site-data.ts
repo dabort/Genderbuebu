@@ -27,7 +27,7 @@ export const siteData = {
         date: "Freitag, 06. Aug. 2027",
         time: "ab 17 Uhr",
         artists: [
-          "Fääschtbänkler",
+          "Fäaschtbänkler",
           "Hess-Rusch-Hegner",
           "Moser Musig",
           "Salwaldbuebu",

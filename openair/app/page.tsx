@@ -2,6 +2,7 @@ import Image from "next/image";
 import { siteData } from "@/lib/site-data";
 import { gallery2026 } from "@/lib/gallery-2026";
 import EventGallery from "@/components/EventGallery";
+import MainMenu from "@/components/MainMenu";
 
 export default function Home() {
   const { event2027, retrospective2026 } = siteData;
@@ -10,13 +11,15 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
 
+      <MainMenu />
+
       {/* HERO 2027 */}
-      <section className="relative overflow-hidden">
+      <section id="start" className="relative overflow-hidden">
 
         {/* MASTER KEYVISUAL 2027 */}
         <div className="relative z-20 w-full">
           <Image
-            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/hero_genderbuebu-openair.webp"
+            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/hero_genderbuebu-openair_1.webp"
             alt="Genderbüebu Open Air 2027 – 06./07. August 2027, Festwiese Stapfen Naters"
             width={2103}
             height={1035}
@@ -26,41 +29,27 @@ export default function Home() {
           />
         </div>
 
-        {/* HOLZWAND */}
+        {/* ZAUN MIT ERINGERKUH */}
         <div
-          className="relative h-[220px] overflow-hidden"
+          className="relative z-30 w-full"
           style={{
-            marginTop: "calc(-3.30vw)"
+            marginTop: "-43vw"
           }}
         >
           <Image
-            src={hero.wood}
+            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/zaun_mit_Eringerkuh.webp"
             alt=""
-            fill
+            width={1920}
+            height={600}
             sizes="100vw"
-            className="object-cover"
+            className="block h-auto w-full"
           />
-
-          <div className="absolute inset-0 bg-black/10" />
-
-          {/* BUTTONS */}
-          <div className="absolute inset-0 z-30 flex items-center justify-center">
-            <div className="flex gap-6">
-              <span className="inline-flex min-w-[260px] items-center justify-center border-2 border-white/80 bg-black/45 px-8 py-5 text-base font-bold uppercase tracking-[0.18em] text-white backdrop-blur-[1px]">
-                Line-up 2027
-              </span>
-
-              <span className="inline-flex min-w-[300px] items-center justify-center border-2 border-white/45 bg-black/45 px-8 py-5 text-base font-bold uppercase tracking-[0.18em] text-white/70 backdrop-blur-[1px]">
-                Tickets ab 01.10.2026
-              </span>
-            </div>
-          </div>
         </div>
 
       </section>
 
       {/* LINE-UP 2027 */}
-      <section className="relative overflow-hidden bg-black text-white">
+      <section id="lineup" className="relative overflow-hidden bg-black text-white">
 
         {/* BERGLANDSCHAFT */}
         <Image
@@ -170,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* RÜCKBLICK 2026 */}
-      <section className="bg-[#f3f0e8] text-black">
+      <section id="rueckblick" className="bg-[#f3f0e8] text-black">
 
         {/* INTRO */}
         <div className="mx-auto grid max-w-7xl gap-10 px-6 pb-10 pt-20 md:px-10 md:pb-14 md:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:px-14">
@@ -307,7 +296,7 @@ export default function Home() {
         </div>
 
         {/* SPONSOREN */}
-        <section className="bg-black text-white">
+        <section id="sponsoren" className="bg-black text-white">
           <div className="mx-auto max-w-[1600px] px-6 py-20 md:px-10 md:py-28">
 
             <div className="mb-16 text-center md:mb-20">
@@ -492,14 +481,6 @@ export default function Home() {
                     </a>
                   </p>
 
-                  <p>
-                    <a
-                      href="tel:+41793476046"
-                      className="transition-colors hover:text-black"
-                    >
-                      +41 79 347 60 46
-                    </a>
-                  </p>
                 </div>
               </div>
 
@@ -512,6 +493,46 @@ export default function Home() {
                 <p className="max-w-[280px] text-sm leading-6 text-black/50">
                   Folge den Genderbüebu und verpasse keine Neuigkeiten rund um das Open Air.
                 </p>
+
+                <div className="mt-6 flex items-center gap-4">
+                  <a
+                    href="https://www.instagram.com/genderbuebu_openair?stkn=cGNmeWpuYmsyOTlt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Genderbüebu Open Air auf Instagram"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-black/15 text-black/60 transition hover:border-black/40 hover:text-black"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                    </svg>
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/share/1QQHbHDB2W/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Genderbüebu Open Air auf Facebook"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-black/15 text-black/60 transition hover:border-black/40 hover:text-black"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      className="h-5 w-5"
+                      fill="currentColor"
+                    >
+                      <path d="M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4Z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
             </div>
