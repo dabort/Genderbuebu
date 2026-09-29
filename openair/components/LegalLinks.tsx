@@ -129,7 +129,14 @@ export default function LegalLinks() {
 
                     <p>
                       Daniel Borter<br />
-                      webbox.one
+                      <a
+                        href="https://webbox.one"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white underline underline-offset-4"
+                      >
+                        webbox.one
+                      </a>
                     </p>
                   </section>
                 </div>

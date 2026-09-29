@@ -30,3 +30,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* OpenAir – Wald/Nebel nur im Rückblick / Impressionen */
+.rueckblick-tannen {
+  background-image:
+    url("https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/wald_nebel.webp");
+
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .rueckblick-tannen {
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+

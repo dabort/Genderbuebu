@@ -8,7 +8,7 @@ type EventGalleryProps = {
   images: readonly string[];
 };
 
-const INITIAL_COUNT = 5;
+const INITIAL_COUNT = 4;
 const LOAD_MORE_COUNT = 20;
 
 export default function EventGallery({
@@ -85,7 +85,7 @@ export default function EventGallery({
         {title}
       </h3>
 
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-[1100px] grid-cols-2 gap-2 md:grid-cols-4">
         {visibleImages.map((src, index) => (
           <button
             key={src}
@@ -98,7 +98,7 @@ export default function EventGallery({
               src={src}
               alt=""
               fill
-              sizes="(max-width: 767px) 50vw, (max-width: 1023px) 33vw, 20vw"
+              sizes="(max-width: 767px) 50vw, 25vw"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             />
           </button>

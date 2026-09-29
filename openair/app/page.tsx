@@ -3,6 +3,7 @@ import { siteData } from "@/lib/site-data";
 import { gallery2026 } from "@/lib/gallery-2026";
 import EventGallery from "@/components/EventGallery";
 import MainMenu from "@/components/MainMenu";
+import LegalLinks from "@/components/LegalLinks";
 
 export default function Home() {
   const { event2027, retrospective2026 } = siteData;
@@ -159,7 +160,7 @@ export default function Home() {
       </section>
 
       {/* RÜCKBLICK 2026 */}
-      <section id="rueckblick" className="bg-[#f3f0e8] text-black">
+      <section id="rueckblick" className="rueckblick-tannen relative overflow-hidden bg-[#f3f0e8] text-black">
 
         {/* INTRO */}
         <div className="mx-auto grid max-w-7xl gap-10 px-6 pb-10 pt-20 md:px-10 md:pb-14 md:pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:px-14">
@@ -174,7 +175,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-end">
-            <p className="max-w-xl text-lg leading-8 text-black/70">
+            <p className="max-w-xl text-lg leading-8 text-black/80">
               Zwei Tage Musik, Begegnungen und echte Walliser Open-Air-Stimmung.
               Danke an alle, die 2026 auf der Festwiese Stapfen mit uns gefeiert haben.
               Die schönsten Momente zeigen wir euch hier noch einmal.
@@ -262,7 +263,7 @@ export default function Home() {
         </div>
 
         {/* DROHNENAUFNAHMEN 2026 */}
-        <div className="mx-auto max-w-[1600px] px-3 pb-24 md:px-6 md:pb-32">
+        <div className="mx-auto max-w-7xl px-6 pb-24 md:px-10 md:pb-32 lg:px-14">
           <div className="mb-10 text-center">
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-black/45">
               Open Air aus der Luft
@@ -295,8 +296,20 @@ export default function Home() {
           </div>
         </div>
 
-        {/* SPONSOREN */}
-        <section id="sponsoren" className="bg-black text-white">
+      </section>
+
+      {/* SPONSOREN */}
+      <section
+        id="sponsoren"
+        className="bg-black text-white"
+        style={{
+          backgroundImage:
+            'url("https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/wallis_sw.webp")',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
           <div className="mx-auto max-w-[1600px] px-6 py-20 md:px-10 md:py-28">
 
             <div className="mb-16 text-center md:mb-20">
@@ -416,8 +429,17 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="border-t border-black/10 bg-white text-black">
-          <div className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-20">
+        <footer
+          className="relative overflow-hidden bg-[#f3f0e8] text-black"
+          style={{
+            backgroundImage:
+              'url("https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/bergkette.webp")',
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center bottom",
+            backgroundSize: "100% auto",
+          }}
+        >
+          <div className="relative z-10 mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-20">
 
             <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
 
@@ -430,7 +452,7 @@ export default function Home() {
                   Open Air
                 </p>
 
-                <p className="mt-7 max-w-[300px] text-sm leading-7 text-black/50">
+                <p className="mt-7 max-w-[300px] text-sm leading-7 text-black/80">
                   Musik, Emotionen und unvergessliche Momente im Herzen des Wallis.
                   Das Genderbüebu Open Air verbindet Schweizer Musik mit einzigartiger
                   Festivalatmosphäre.
@@ -443,7 +465,7 @@ export default function Home() {
                   Quick Links
                 </h3>
 
-                <nav className="flex flex-col gap-4 text-sm text-black/50">
+                <nav className="flex flex-col gap-4 text-sm text-black/80">
                   <a href="#home" className="transition-colors hover:text-black">
                     Home
                   </a>
@@ -490,7 +512,7 @@ export default function Home() {
                   Offizielle soziale Medien
                 </h3>
 
-                <p className="max-w-[280px] text-sm leading-6 text-black/50">
+                <p className="max-w-[280px] text-sm leading-6 text-black/80">
                   Folge den Genderbüebu und verpasse keine Neuigkeiten rund um das Open Air.
                 </p>
 
@@ -538,28 +560,17 @@ export default function Home() {
             </div>
 
             {/* FOOTER BOTTOM */}
-            <div className="mt-16 flex flex-col gap-5 border-t border-black/10 pt-7 text-xs text-black/40 md:mt-20 md:flex-row md:items-center md:justify-between">
+            <div className="mt-16 flex flex-col gap-5  pt-7 text-xs text-black/40 md:mt-20 md:flex-row md:items-center md:justify-between">
               <p>
                 © 2026 Genderbüebu
               </p>
 
-              <div className="flex flex-wrap gap-x-6 gap-y-3">
-                <a href="/impressum" className="transition-colors hover:text-black">
-                  Impressum
-                </a>
-                <a href="/datenschutz" className="transition-colors hover:text-black">
-                  Datenschutz
-                </a>
-                <a href="/infoblatt" className="transition-colors hover:text-black">
-                  Infoblatt
-                </a>
-              </div>
+              <LegalLinks />
             </div>
 
           </div>
         </footer>
 
-      </section>
     </main>
   );
 }
