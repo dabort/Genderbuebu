@@ -20,7 +20,7 @@ export default function Home() {
         {/* MASTER KEYVISUAL 2027 */}
         <div className="relative z-20 w-full">
           <Image
-            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/hero_genderbuebu-openair.webp"
+            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/hero_genderbuebu-openair-v2.webp"
             alt="Genderbüebu Open Air 2027 – 06./07. August 2027, Festwiese Stapfen Naters"
             width={2103}
             height={1035}
