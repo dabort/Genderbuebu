@@ -20,7 +20,7 @@ export default function Home() {
         {/* MASTER KEYVISUAL 2027 */}
         <div className="relative z-20 w-full">
           <Image
-            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/hero_genderbuebu-openair_1.webp"
+            src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/hero_genderbuebu-openair.webp"
             alt="Genderbüebu Open Air 2027 – 06./07. August 2027, Festwiese Stapfen Naters"
             width={2103}
             height={1035}
@@ -28,11 +28,41 @@ export default function Home() {
             sizes="100vw"
             className="block h-auto w-full"
           />
+
+          {/* VAUDOISE – PRESENTED BY */}
+          <div className="absolute left-[3%] top-[4%] z-30 w-[20%] max-w-[420px]">
+            <Image
+              src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/Presented-by_Vaudoise.webp"
+              alt="Präsentiert von Vaudoise"
+              width={800}
+              height={300}
+              sizes="20vw"
+              className="h-auto w-full object-contain"
+            />
+          </div>
+
+          {/* EVENTFROG – TICKETS */}
+          <a
+            href="https://eventfrog.ch/de/p/gruppen/genderbueebu-open-air-2027-7371195677517347260.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Tickets für das Genderbüebu Open Air 2027 bei Eventfrog kaufen"
+            className="absolute bottom-[16%] right-[8%] z-50 w-[11%] max-w-[230px] cursor-pointer transition-transform duration-200 hover:scale-105"
+          >
+            <Image
+              src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/eventrog.webp"
+              alt="Eventfrog – Tickets jetzt sichern"
+              width={500}
+              height={500}
+              sizes="11vw"
+              className="h-auto w-full object-contain"
+            />
+          </a>
         </div>
 
         {/* ZAUN MIT ERINGERKUH */}
         <div
-          className="relative z-30 w-full"
+          className="pointer-events-none relative z-30 w-full"
           style={{
             marginTop: "-43vw"
           }}
