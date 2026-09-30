@@ -87,7 +87,7 @@ export const siteData = {
     presentedBy: [
       {
         name: "Vaudoise",
-        logo: `${R2_BASE}/sponsors/presented-by/vaudoise_gruen_praesentiert.webp`,
+        logo: `${R2_BASE}/sponsors/presented-by/Vaudoise_ws.webp`,
       },
     ],
 
@@ -124,7 +124,7 @@ export const siteData = {
       },
       {
         name: "Hydro-Nico",
-        logo: `${R2_BASE}/sponsors/partners/hydro-nico.svg`,
+        logo: `${R2_BASE}/sponsors/partners/hydronico.webp`,
       },
       {
         name: "Raclette du Valais",

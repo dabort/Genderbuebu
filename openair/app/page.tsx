@@ -359,7 +359,7 @@ export default function Home() {
 
               <div className="mx-auto relative h-[120px] w-full max-w-[420px] md:h-[150px]">
                 <Image
-                  src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/sponsors/presented-by/vaudoise_gruen_praesentiert.webp"
+                  src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/sponsors/presented-by/Vaudoise_ws.webp"
                   alt="Vaudoise"
                   fill
                   sizes="420px"
@@ -437,7 +437,7 @@ export default function Home() {
               <div className="mx-auto grid max-w-[1100px] grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-5 md:gap-10">
                 {[
                   ["feldschloesschen.png", "Feldschlösschen"],
-                  ["hydro-nico.svg", "Hydro Nico"],
+                  ["hydronico.webp", "Hydro Nico"],
                   ["raclette-du-valais.png", "Raclette du Valais"],
                   ["texon.png", "Texon"],
                   ["tip-top-wc-service.png", "Tip Top WC Service"],
