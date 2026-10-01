@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://genderbuebuopenair.ch"),
 
   title: {
-    default: "Genderbüebu Open Air | Gampel",
+    default: "Genderbüebu Open Air | Naters",
     template: "%s | Genderbüebu Open Air",
   },
 
   description:
-    "Genderbüebu Open Air – Musik, Stimmung und echte Walliser Open-Air-Kultur auf der Festwiese Stapfen in Gampel.",
+    "Genderbüebu Open Air – Musik, Stimmung und echte Walliser Open-Air-Kultur auf der Festwiese Stapfen in Naters.",
 
   alternates: {
     canonical: "/",
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     locale: "de_CH",
     url: "/",
     siteName: "Genderbüebu Open Air",
-    title: "Genderbüebu Open Air | Gampel",
+    title: "Genderbüebu Open Air | Naters",
     description:
-      "Genderbüebu Open Air – Musik, Stimmung und echte Walliser Open-Air-Kultur auf der Festwiese Stapfen in Gampel.",
+      "Genderbüebu Open Air – Musik, Stimmung und echte Walliser Open-Air-Kultur auf der Festwiese Stapfen in Naters.",
   },
 
   twitter: {
     card: "summary",
-    title: "Genderbüebu Open Air | Gampel",
+    title: "Genderbüebu Open Air | Naters",
     description:
-      "Genderbüebu Open Air – Musik, Stimmung und echte Walliser Open-Air-Kultur auf der Festwiese Stapfen in Gampel.",
+      "Genderbüebu Open Air – Musik, Stimmung und echte Walliser Open-Air-Kultur auf der Festwiese Stapfen in Naters.",
   },
 };
 

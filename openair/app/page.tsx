@@ -41,6 +41,18 @@ export default function Home() {
             />
           </div>
 
+          {/* WALLISER STERNE */}
+          <div className="pointer-events-none absolute right-[5%] top-[5%] z-30 w-[14%] max-w-[300px]">
+            <Image
+              src="https://pub-894f6ed26225410c96c9a46e36ef0199.r2.dev/openair/branding/wallisersterne.webp"
+              alt=""
+              width={700}
+              height={300}
+              sizes="14vw"
+              className="h-auto w-full object-contain"
+            />
+          </div>
+
           {/* EVENTFROG – TICKETS */}
           <a
             href="https://eventfrog.ch/de/p/gruppen/genderbueebu-open-air-2027-7371195677517347260.html"
